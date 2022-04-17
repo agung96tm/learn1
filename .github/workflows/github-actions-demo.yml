@@ -15,4 +15,4 @@ jobs:
         env:
           OTHER: ${{ secrets.OTHER_TEST }}
           NAME: Agung Yuliyanto
-        run: echo "$NAME"
+        run: echo "$OTHER"
