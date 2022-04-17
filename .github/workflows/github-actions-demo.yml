@@ -4,8 +4,13 @@ jobs:
   ci:
     runs-on: ubuntu-18.04
     steps:
-      - name: View poetry --help
+      - name: My Test Env
         env:
           TEST: ${{ secrets.MY_TEST }}
+        run: echo $TEST
+
+      - name: My Test Env
+        env:
+          TEST: ${{ secrets.OTHER_TEST }}
         run: echo $TEST
 
