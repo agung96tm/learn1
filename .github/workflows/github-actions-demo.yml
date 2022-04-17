@@ -4,7 +4,7 @@ jobs:
   ci:
     runs-on: ubuntu-18.04
     steps:
-      - name: My Test Env
+      - name: My Test TEST
         shell: bash
         env:
           TEST: ${{ secrets.MY_TEST }}
@@ -14,4 +14,5 @@ jobs:
         shell: bash
         env:
           OTHER: ${{ secrets.OTHER_TEST }}
-        run: echo "$OTHER"
+          NAME: Agung Yuliyanto
+        run: echo "$NAME"
