@@ -8,10 +8,10 @@ jobs:
         shell: bash
         env:
           TEST: ${{ secrets.MY_TEST }}
-        run: echo $TEST
+        run: echo "$TEST"
 
       - name: My Test Env
         shell: bash
         env:
-          TEST: ${{ secrets.OTHER_TEST }}
-        run: echo $TEST
+          OTHER: ${{ secrets.OTHER_TEST }}
+        run: echo "$OTHER"
